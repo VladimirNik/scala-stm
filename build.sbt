@@ -13,10 +13,6 @@ libraryDependencies += ("org.scalatest" %% "scalatest" % "[1.5,)" % "test")
 
 libraryDependencies += ("junit" % "junit" % "4.5" % "test")
 
-libraryDependencies in ThisBuild += compilerPlugin("test.org" %% "printplugin" % "1.0")
-
-scalacOptions in ThisBuild += "-P:printplugin:oversrc"
-
 // skip exhaustive tests
 testOptions += Tests.Argument("-l", "slow")
 
