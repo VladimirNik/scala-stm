@@ -13,7 +13,7 @@ libraryDependencies += ("org.scalatest" %% "scalatest" % "[1.5,)" % "test")
 
 libraryDependencies += ("junit" % "junit" % "4.5" % "test")
 
-libraryDependencies in ThisBuild += compilerPlugin("test.org" %% "printplugin" % "1.0")
+libraryDependencies in ThisBuild += compilerPlugin("org.scala-lang.plugins" %% "printplugin" % "0.2.0")
 
 scalacOptions in ThisBuild += "-P:printplugin:oversrc"
 
